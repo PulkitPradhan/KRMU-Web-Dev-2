@@ -200,29 +200,41 @@
 // },0)
 // console.log("after timeout")
 
-const name = document.querySelector("#name")
-const btn = document.querySelector(".btn")
-const list = document.querySelector(".list")
+//const name = document.querySelector("#name")
+//const btn = document.querySelector(".btn")
+//const list = document.querySelector(".list")
 
-btn.addEventListener("click", () => {
+//btn.addEventListener("click", () => {
 
-    if (name.value === "") return
-    const li = document.createElement("li")
-    const dlt = document.createElement("button")
-
-
-    dlt.innerText = "Delete"
-    li.innerText = name.value;
+//if (name.value === "") return
+//const li = document.createElement("li")
+//const dlt = document.createElement("button")
 
 
-    dlt.addEventListener("click", () => {
-        list.removeChild(li)
-    })
+//dlt.innerText = "Delete"
+//li.innerText = name.value;
 
 
-    list.appendChild(li)
-    li.appendChild(dlt)
+//dlt.addEventListener("click", () => {
+//list.removeChild(li)
+//})
 
 
-    name.value = ""
-})
+//list.appendChild(li)
+//li.appendChild(dlt)
+
+
+//name.value = ""
+//})
+
+function greet() { // callback function
+    setTimeout(() => {
+        console.log("Hello students!")
+    }, 2000)
+    print(45)
+}
+
+function print(num) { //higher order function
+    console.log("total students are ", num)
+}
+greet(print)
