@@ -243,21 +243,28 @@
 //greet(print)
 
 
-console.log('Starting homework')
+//console.log('Starting homework')
 
-setTimeout(() => {
-    console.log('homework done')
-    console.log('Starting dinner.....');
+//setTimeout(() => {
+//console.log('homework done')
+//console.log('Starting dinner.....');
 
 
+//setTimeout(() => {
+//console.log('dinner done')
+//console.log('Getting ready to go out.....');
+
+
+//setTimeout(() => {
+//console.log('Going to playground.....');
+//}, 1000); //after dinner
+//}, 1000); //after homework
+//}, 1000); //after starting homework
+
+function finishHomework(callback) {
+    console.log("homework done");
     setTimeout(() => {
-        console.log('dinner done')
-        console.log('Getting ready to go out.....');
-
-
-        setTimeout(() => {
-            console.log('Going to playground.....');
-        }, 1000); //after dinner
-    }, 1000); //after homework
-}, 1000); //after starting homework
-
+        console.log("Hmoework Done!")
+        callback();
+    }, 2000)
+}
