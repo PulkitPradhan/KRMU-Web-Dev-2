@@ -261,10 +261,44 @@
 //}, 1000); //after homework
 //}, 1000); //after starting homework
 
+//function finishHomework(callback) {
+// console.log("homework done");
+// setTimeout(() => {
+// console.log("Hmoework Done!")
+// callback();
+// }, 2000)
+//}
+
+//function eatDinner(callback) {
+//console.log("Dinner done");
+//setTimeout(() => {
+//console.log("Dinner Done!")
+//callback();
+//}, 2000)
+//}
+
 function finishHomework(callback) {
-    console.log("homework done");
+    console.log("Homework done");
     setTimeout(() => {
-        console.log("Hmoework Done!")
+        console.log("Homework Done!")
         callback();
     }, 2000)
 }
+
+function eatDinner(callback) {
+    console.log("Dinner done");
+    setTimeout(() => {
+        console.log("Dinner Done!")
+        callback();
+    }, 1500)
+}
+
+function goToPlayground() {
+    console.log("Going to playground")
+}
+
+finishHomework(() => {
+    eatDinner(() => {
+        goToPlayground();
+    });
+});
