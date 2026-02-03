@@ -11,7 +11,7 @@
 // para[1].style.color="red"
 // console.log(para);
 
-// const para = document.querySelectorAll(".para") //return node list 
+// const para = document.querySelectorAll(".para") //return node list
 //  para[0].innerText="THIS IS UPDATED PARAGRAPH TEXT"
 //  para[1].style.color="red"
 //  console.log(para);
@@ -19,7 +19,7 @@
 //  let arr= [1,2,3,4,5]
 //  const newArr= arr.forEach((ele)=>console.log(ele))
 
-// const container = document.querySelector(".container") 
+// const container = document.querySelector(".container")
 // container.innerHTML= "<h1>This is a heading</h1><p>This is a paragraph inside container div</p>"
 // console.log(container)
 
@@ -113,15 +113,15 @@
 //     console.log("All resources finished loading!");
 // });
 
-// console.log(a); 
-// // console.log(b); 
+// console.log(a);
+// // console.log(b);
 
 
 // var a = 10;
 // let b = 20;
 
-// console.log(a); 
-// console.log(b); 
+// console.log(a);
+// console.log(b);
 
 // function test(){
 //     let c = 30;
@@ -183,7 +183,7 @@
 // console.log(timerId)
 // setTimeout(()=>{
 //     clearInterval(timerId)
-// },10*1000)       
+// },10*1000)
 
 // let count=1
 
@@ -277,28 +277,57 @@
 //}, 2000)
 //}
 
-function finishHomework(callback) {
-    console.log("Homework done");
-    setTimeout(() => {
-        console.log("Homework Done!")
-        callback();
-    }, 2000)
-}
+//function finishHomework(callback) {
+//console.log("Homework done");
+//setTimeout(() => {
+//console.log("Homework Done!")
+//callback();
+//}, 2000)
+//}
 
-function eatDinner(callback) {
-    console.log("Dinner done");
-    setTimeout(() => {
-        console.log("Dinner Done!")
-        callback();
-    }, 1500)
-}
+//function eatDinner(callback) {
+//console.log("Dinner done");
+//setTimeout(() => {
+//console.log("Dinner Done!")
+//callback();
+//}, 1500)
+//}
 
-function goToPlayground() {
-    console.log("Going to playground")
-}
+//function goToPlayground() {
+//console.log("Going to playground")
+//}
 
-finishHomework(() => {
-    eatDinner(() => {
-        goToPlayground();
-    });
-});
+//finishHomework(() => {
+//eatDinner(() => {
+//goToPlayground();
+//});
+//});
+
+//const p = new Promise((res, rej) => {
+//    let done = true;
+//    if (done) {
+//        res("Homework done")
+//    }
+//    else {
+//       rej("Homework not done")
+//    }
+//})
+
+
+//const p = new Promise((res, rej) => {
+//let done = false;
+//setTimeouot(() => {
+//if (done) {
+//res("Homework done")
+//} else {
+//rej("Homework not done")
+
+//}
+//}, 1500)
+//})
+//console.log(p)
+
+
+p.then((msg) => { console.log(msg) })
+    .catch(err => { console.log(err) })
+    .finally(() => { console.log("Promise settled") })
