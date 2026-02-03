@@ -227,14 +227,35 @@
 //name.value = ""
 //})
 
-function greet() { // callback function
-    setTimeout(() => {
-        console.log("Hello students!")
-    }, 2000)
-    print(45)
-}
+//function greet() { // callback function
+//setTimeout(() => {
+//console.log("Hello students!")
+//}, 2000)
+//print(45)
+//}
 
-function print(num) { //higher order function
-    console.log("total students are ", num)
-}
-greet(print)
+//function print(num) { //higher order function
+//console.log("total students are ", num)
+//}
+//greet(print)
+
+//------------------------------------------------------------------------------- 03/02/26 --------------------------------------------------------------------------------
+console.log('Starting homework')
+
+setTimeout(() => {
+    console.log('homework done')
+    console.log('Starting dinner.....');
+
+
+    setTimeout(() => {
+        console.log('dinner done')
+        console.log('Getting ready to go out.....');
+
+
+        setTimeout(() => {
+            console.log('Going to playground.....');
+        }, 1000); //after dinner
+    }, 1000); //after homework
+}, 1000); //after starting homework
+
+
