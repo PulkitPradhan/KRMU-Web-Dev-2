@@ -332,6 +332,8 @@
 //    .catch(err => { console.log(err) })
 //    .finally(() => { console.log("Promise settled") })
 
+
+
 function dohomework() {
     const p = new Promise((res, rej) => {
         setTimeout(() => {
@@ -382,3 +384,23 @@ function goToPlayground() {
     })
     return p
 }
+
+// promise chaining
+
+dohomework().then((msg) => {
+    console.log(msg)
+    return eatdinner()
+}).then((msg) => {
+    console.log(msg)
+    return goToPlayground()
+}).then((msg) => {
+    console.log(msg)
+}).catch((err) => {
+    console.log(err)
+}).finally(() => {
+    console.log("Go To Sleep")
+})
+
+//callback hell -> that's why we use promises
+//but still promises are not enough as we have to call them back again and again and they are not readable 
+
