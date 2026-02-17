@@ -334,72 +334,72 @@
 
 
 
-function dohomework() {
-    const p = new Promise((res, rej) => {
-        setTimeout(() => {
-            let done = true;
-            if (done) {
-                console.log("Homework done")
-                res("Homework done")
-            }
-            else {
-                console.log("Homework not done")
-                rej("Homework not done")
-            }
-        }, 1500)
-    })
-    return p
-}
+// function dohomework() {
+//     const p = new Promise((res, rej) => {
+//         setTimeout(() => {
+//             let done = true;
+//             if (done) {
+//                 console.log("Homework done")
+//                 res("Homework done")
+//             }
+//             else {
+//                 console.log("Homework not done")
+//                 rej("Homework not done")
+//             }
+//         }, 1500)
+//     })
+//     return p
+// }
 
-function eatdinner() {
-    const p = new Promise((res, rej) => {
-        setTimeout(() => {
-            let done = true;
-            if (done) {
-                console.log("Dinner done")
-                res("Dinner done")
-            }
-            else {
-                console.log("Dinner not done")
-                rej("Dinner not done")
-            }
-        }, 1500)
-    })
-    return p
-}
+// function eatdinner() {
+//     const p = new Promise((res, rej) => {
+//         setTimeout(() => {
+//             let done = true;
+//             if (done) {
+//                 console.log("Dinner done")
+//                 res("Dinner done")
+//             }
+//             else {
+//                 console.log("Dinner not done")
+//                 rej("Dinner not done")
+//             }
+//         }, 1500)
+//     })
+//     return p
+// }
 
-function goToPlayground() {
-    const p = new Promise((res, rej) => {
-        setTimeout(() => {
-            let done = true;
-            if (done) {
-                console.log("Playground done")
-                res("Playground done")
-            }
-            else {
-                console.log("Playground not done")
-                rej("Not allowed to go to playground")
-            }
-        }, 2000)
-    })
-    return p
-}
+// function goToPlayground() {
+//     const p = new Promise((res, rej) => {
+//         setTimeout(() => {
+//             let done = true;
+//             if (done) {
+//                 console.log("Playground done")
+//                 res("Playground done")
+//             }
+//             else {
+//                 console.log("Playground not done")
+//                 rej("Not allowed to go to playground")
+//             }
+//         }, 2000)
+//     })
+//     return p
+// }
 
 // promise chaining
 
-dohomework().then((msg) => {
-    console.log(msg)
-    return eatdinner()
-}).then((msg) => {
-    console.log(msg)
-    return goToPlayground()
-}).then((msg) => {
-    console.log(msg)
-}).catch((err) => {
-    console.log(err)
-}).finally(() => {
-    console.log("Go To Sleep")
-})
+// dohomework().then((msg) => {
+//     console.log(msg)
+//     return eatdinner()
+// }).then((msg) => {
+//     console.log(msg)
+//     return goToPlayground()
+// }).then((msg) => {
+//     console.log(msg)
+// }).catch((err) => {
+//     console.log(err)
+// }).finally(() => {
+//     console.log("Go To Sleep")
+// })
 
 //callback hell -> that's why we use promises
 //but still promises are not enough as we have to call them back again and again and they are not readable 
