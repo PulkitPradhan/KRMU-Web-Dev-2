@@ -5,7 +5,6 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />  {/* component is a function that returns jsx */}
+    <App />
   </StrictMode>,
 )
-//render is update (change in UI) and mount (first time render) both are same in react 18
