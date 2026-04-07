@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import Menu from './Components/Menu'
 import Article from './Components/Article'
+import Homepage from './Components/Homepage'
 import './App.css'
 
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <Menu/>
+      <Homepage/>
       <Article/>
       <section id="center">
         <div className="hero">
