@@ -8,6 +8,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <Menu/>
     <>
       <section id="center">
         <div className="hero">

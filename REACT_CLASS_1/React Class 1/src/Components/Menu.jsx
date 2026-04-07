@@ -1,10 +1,14 @@
-import React from 'react';
+import React, ( Component ) from 'react';
+export default class Menu extends Component {
+  constructor(props) {
+    super(props);
+  }
 
-function Menu(props) {
-  return (
-    <>
-      <div>Menu</div>
-      <ul>
+  render() {
+    return (
+      <>
+        <div>Menu</div>
+        <ul>
         <li>Entertainment</li>
         <li>Politics</li>
         <li>Tech</li>
