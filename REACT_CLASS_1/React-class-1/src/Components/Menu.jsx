@@ -66,7 +66,9 @@ class Menu extends Component {
                     <li>World</li>
                 </ul>
                 <h2>{this.state.count}</h2>
-                <button onClick={this.handleIncrement}>Increment</button>
+                <button className='btn' onClick={this.handleIncrement}>
+                    Increment
+                </button>
             </div>
         )
     }
