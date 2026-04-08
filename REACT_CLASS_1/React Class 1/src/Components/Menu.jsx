@@ -5,6 +5,11 @@ export default class Menu extends Component {
   }
 
   render() {
+          <div>
+            
+          </div>
+
+
     return (
       <>
         <div>Menu</div>
@@ -22,4 +27,11 @@ export default class Menu extends Component {
     </>
   );
 }
+
+componentDidMount()(
+  console.log("Component Mounted")
+ //dat to be retreived from backend  
+)
+
+
 export default Menu;
