@@ -1,5 +1,6 @@
 import React ,{Component}from 'react'
 import { add as addition } from './utility'
+import '../css/menu.css'
 // function Menu() {
 //     console.log(addition(3,4))
 //   return (
