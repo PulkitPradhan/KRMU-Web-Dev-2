@@ -1,0 +1,76 @@
+.homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    min-height: 300px;
+}
+
+.status-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.status-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.status-card h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    background: linear-gradient(135deg, var(--text-h), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.status-card p {
+    color: var(--text);
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-login {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 0 20px var(--accent-bg);
+}
+
+.btn-login:hover {
+    background: #fff;
+    color: var(--accent);
+    transform: scale(1.05);
+}
+
+.btn-logout {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+}
+
+.btn-logout:hover {
+    background: var(--accent);
+    color: #fff;
+    transform: scale(1.05);
+}
